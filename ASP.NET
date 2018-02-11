@@ -1,0 +1,22 @@
+$(window).load(function () {
+            alert(' Alert 1 : Browser Window and all assets are loaded!');
+        });
+        $(document).ready(function () {
+            alert(' Alert 2 : DOM is ready to manipulate!');
+        });
+        $(function () {
+            alert(' Alert 3 : DOM is ready to manipulate!');
+        });
+        $(function ($) {
+            alert(' Alert 4 : DOM is ready to manipulate!');
+        });
+    
+
+
+    
+        
+            This is sample paragraph text. 
+        
+    
+    
+        alert(' Alert 5 : ' + $('p').text());
