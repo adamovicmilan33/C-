@@ -1,0 +1,121 @@
++@font-face
++{
++    font-family: 'BallparkWeiner';
++    src: url('../public/fonts/ballpark.eot');
++    src: url('../public/fonts/ballpark.eot?#iefix') format('embedded-opentype'),
++         url('../public/fonts/ballpark.woff') format('woff'),
++         url('../punlic/fonts/ballpark.ttf') format('truetype'),
++         url('../public/fonts/ballpark.svg#BallparkWeiner') format('svg');
++    font-weight: normal;
++    font-style: normal;
++}
++
++@font-face
++{
++    font-family: 'Dayrom';
++    src: url('../public/fonts/dayrom.eot');
++    src: url('../public/fonts/dayrom.eot?#iefix') format('embedded-opentype'),
++         url('../public/fonts/dayrom.woff') format('woff'),
++         url('../public/fonts/dayrom.ttf') format('truetype'),
++         url('../public/fonts/dayrom.svg#Dayrom') format('svg');
++    font-weight: normal;
++    font-style: normal;
++}
++body
++
++{
++
++    background: url('../public/images/yellow_background.png');
++
++    font-family: 'Trebuchet MS', Arial, sans-serif;
++
++    color: #181818;
++
++}
++
++
++#main_wrapper
++
++{
++
++    width: 900px;
++
++    margin: auto;
++
++}
++
++
++section h1, footer h1, nav a
++
++{
++
++    font-family: Dayrom, serif;
++
++    font-weight: normal;
++
++    text-transform: uppercase;
++
++}
++/* Header */
++
++header
++{
++    background: url(http://pre04.deviantart.net/7806/th/pre/f/2013/238/6/d/welcome_to_the_n_h_k____misaki_nakahara_by_thebakamono-d6jrfkv.png) repeat-x bottom;
++}
++
++#main_title
++{
++    display: inline-block;
++}
++
++header h1
++{
++    font-family: 'BallparkWeiner', serif;
++    font-size: 2.5em;
++    font-weight: normal;
++}
++
++#logo, header h1
++{
++    display: inline-block;
++    margin-bottom: 0px;
++}
++
++header h2
++{
++    font-family: Dayrom, serif;
++    font-size: 1.1em;
++    margin-top: 0px;
++    font-weight: normal;
++}
++nav
++
++{
++
++    display: inline-block;
++
++    width: 740px;
++
++    text-align: right;
++
++}
++
++
++nav ul
++
++{
++
++    list-style-type: none;
++
++}
++
++
++nav li
++
++{
++
++    display: inline-block;
++
++    margin-right: 15px;
++
++
