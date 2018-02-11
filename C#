@@ -1,0 +1,64 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace H.Classes
+{
+    class TGUI
+    {
+       
+
+        static private void SetButton(ref Button inp, string name, int w, int h, int x, int y, EventHandler on_click)
+        {
+            inp.Location = new Point(x, y);
+            inp.Width = w;
+            inp.Height = h;
+            inp.Font = new Font("Segoe Print", 14);
+            inp.Text = name;
+            inp.Click += on_click;
+        }
+
+        static private void SetButton(ref Button inp, string name, int x, int y, EventHandler on_click)
+        {
+            SetButton(ref inp, name, 161, 50, x, y, on_click);
+        }
+
+       
+        /// 
+        static public Button GetButton(string name, int x, int y, EventHandler on_click)
+        {
+            Button btn = new Button();
+            SetButton(ref (btn), name, x, y, on_click);
+            return btn;
+        }
+
+ 
+        /// 
+        /// 
+        static public Image[,,,] ExtractUnitImages()
+        {
+            int x = 0;
+            int y = 0;
+            Image[,,,] res = new Image[5, 5, 4, 2];
+
+            Bitmap cur_anim = Properties.Resources.Animation_0;
+
+            for (int a = 0; a < 4; a++)
+            {
+                for (int cx = 0; cx < 5; cx++)
+                {
+                    for (int cy = 0; cy < 5; cy++)
+                    {
+                        switch (cy + 1)
+                        {
+                            case 1: y = 205; break;
+                            case 2: y = 338; break;
+                            case 3: y = 476; break;
+                            case 4: y = 612; break;
+                            case 5: y = 745; break;
+                        }
+                        switch (cx + 1)
+                        {
+                            case 1: x = 65; break;
+                            case 2: x = 263; break;
+                            case 3: x = 452; break;
